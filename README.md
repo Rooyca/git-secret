@@ -4,7 +4,7 @@
 
 - git
 - [github-cli](https://cli.github.com/)
-- `SECRET_KEY` environment variable or `.key` file in the root of the repository (optional)
+- `SECRET_KEY` environment variable or `.key` file in the root of the repository
 > You can generate a secret key automatically by leaving the `SECRET_KEY` environment variable empty. It will be stored in the `.key` file.
 
 ## Usage
@@ -25,8 +25,12 @@ Commands:
 
 ## TODO
 
-- [ ] Add configuration file (yaml)
-	- [ ] Change repo path
-	- [ ] Change secret key
-- [ ] Create packages (PIP, AUR, COPR)
+- [x] Add configuration file (json)
+	- [x] Change repo path
+	- [ ] ~Change secret key~
+- [ ] Create packages
+  - [ ] PyPI
+  - [ ] AUR
+  - [ ] COPR
 - [ ] Add tests
+- [ ] Change the way `show` displays the secrets
