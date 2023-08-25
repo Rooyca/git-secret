@@ -29,7 +29,7 @@ Commands:
 	- [x] Change repo path
 	- [ ] ~Change secret key~
 - [ ] Create packages
-  - [ ] PyPI
+  - [x] PyPI
   - [ ] AUR
   - [ ] COPR
 - [ ] Add tests
