@@ -7,6 +7,23 @@
 - `SECRET_KEY` environment variable or `.key` file in the root of the repository
 > You can generate a secret key automatically by leaving the `SECRET_KEY` environment variable empty. It will be stored in the `.key` file.
 
+## Installation
+
+### Pip
+
+```bash
+pip install gsec
+```
+
+### From source
+
+```bash
+git clone 
+cd git-secret
+pip install -r requirements.txt
+python src/main.py --help
+```
+
 ## Usage
 
 ```bash
