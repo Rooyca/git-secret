@@ -50,4 +50,4 @@ Commands:
   - [ ] AUR
   - [ ] COPR
 - [ ] Add tests
-- [ ] Change the way `show` displays the secrets
+- [x] Change the way `show` displays the secrets

@@ -95,17 +95,19 @@ def show(issue_id):
     c = show_issue.stdout.decode()
 
     try:
-        decTitle = decrypt(c.split("\n")[0].split(":")[-1].strip())
-        c = c.replace(c.split("\n")[0].split(":")[-1].strip(), decTitle)
+        Title = decrypt(c.split("\n")[0].split(":")[-1].strip())
+        #c = c.replace(c.split("\n")[0].split(":")[-1].strip(), Title)
     except Exception as e:
-        pass    
+        Title = c.split("\n")[0].split(":")[-1].strip()  
 
     try:
-        decSecret = decrypt(c.split("\n")[-2])
-        c = c.replace(c.split("\n")[-2], decSecret)
+        Desc = decrypt(c.split("\n")[-2])
+        #c = c.replace(c.split("\n")[-2], Desc)
     except Exception as e:
-        pass
-    click.echo(c)
+        Desc = c.split("\n")[-2]
+
+    #click.echo(c)
+    click.echo(f"{CYAN}{issue_id}{RESET}: {Title}\n---\n{Desc}")
 
 @cli.command()
 @click.argument("issue_id")
