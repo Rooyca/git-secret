@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import click, datetime, json, subprocess, os
 from cryptography.fernet import Fernet
 from src.colors import *
